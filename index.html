@@ -74,40 +74,6 @@
            
             return true;
        }
-       document.getElementById('rsvp-form').addEventListener('submit', (e) => {
-         e.preventDefault(); // Prevents the default form submission behavior       
-
-         if (!validateForm()) {
-           return;
-         }       
-
-         const formData = new FormData(e.target);
-         const data = JSON.stringify(Object.fromEntries(formData));       
-
-         // Send data to Google Sheets via Google Apps Script
-         fetch(e.target.action, {
-           method: 'POST',
-           body: data,
-           headers: {
-             'Content-Type': 'application/json',
-           },
-         })
-           .then((response) => response.json())
-           .then((response) => {
-             if (response.result === 'success') {
-               // Display a success message and clear the form
-               alert('Your RSVP has been submitted successfully!');
-               e.target.reset();
-             } else {
-               // Display an error message
-               alert('Something went wrong. Please try again later.');
-             }
-           })
-           .catch((error) => {
-             console.error('Error:', error);
-             alert('Something went wrong. Please try again later.');
-           });
-       });
     </script>
 
 </head>
