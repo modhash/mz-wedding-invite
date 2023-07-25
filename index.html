@@ -54,26 +54,6 @@
 
         const countdownInterval = setInterval(updateCountdown, 1000);
         updateCountdown();
-               
-        function validateForm() {
-            const name = document.forms["contact"]["name"].value;
-            const email = document.forms["contact"]["email"].value;
-            const address = document.forms["contact"]["address"].value;
-            const message = document.forms["contact"]["message"].value;
-           
-            if (name === "" || email === "" || address === "" || message === "") {
-              alert("All fields are required.");
-              return false;
-            }
-           
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-              alert("Please enter a valid email address.");
-              return false;
-            }
-           
-            return true;
-       }
     </script>
 
 </head>
