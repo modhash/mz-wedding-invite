@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Invitation of Sara Pessy & Moshe</title>
+    <title>Wedding Invitation of MZ and Roisy</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script>
         function updateCountdown() {
-            const weddingDate = new Date('June 25, 2023 18:30:00').getTime();
+            const weddingDate = new Date('July 31, 2023 18:30:00').getTime();
             const now = new Date().getTime();
             const timeRemaining = weddingDate - now;
             const weeks = Math.floor(timeRemaining / (1000 * 60 * 60 * 24 * 7));
@@ -34,10 +34,10 @@
 
         function updateSchedule() {
             const now = new Date();
-            const weddingDate = new Date('June 25, 2023 18:30:00');
-            const chupaDate = new Date('June 25, 2023 19:30:00');
-            const simchasChosonDate = new Date('June 25, 2023 21:30:00');
-            const endDate = new Date('June 25, 2023 23:59:00');
+            const weddingDate = new Date('July 31, 2023 18:30:00');
+            const chupaDate = new Date('July 31, 2023 19:30:00');
+            const simchasChosonDate = new Date('July 31, 2023 21:30:00');
+            const endDate = new Date('July 31, 2023 23:59:00');
 
             if (now >= weddingDate && now < chupaDate) {
                 document.querySelector('.countdown-timer').textContent = 'Reception is happening now!';
@@ -125,13 +125,13 @@
         }
     </style>
     <header class="container mx-auto flex justify-center items-center p-6">
-        <h1 class="text-5xl font-bold">Moshe & Sara Pessy</h1>
+        <h1 class="text-5xl font-bold">MZ & Roizy</h1>
         <!-- <button class="fixed top-2 right-2 bg-sky-300 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-md" onclick="document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });">RSVP</button> -->
     </header>
 
     <section class="hero container mx-auto text-center p-6">
         <img src="background.jpg" alt="Wedding Photo" class="w-full max-w-3xl mx-auto">
-        <h2 class="text-4xl font-semibold py-4">Sunday, June 25, 2023</h2>
+        <h2 class="text-4xl font-semibold py-4">Monday, July 31, 2023</h2>
 
         <div
             class="countdown-timer-container bg-white text-sky-800 border-4 border-blackk-400 p-6 rounded-lg shadow-lg w-full sm:w-2/3 md:w-1/2 mx-auto my-4">
@@ -142,9 +142,9 @@
     </section>
 
     <section class="location container mx-auto text-center p-6">
-        <h2 class="text-3xl font-semibold py-4">The Legacy</h2>
-        <p class="text-xl font-semibold">1275 36th Street</p>
-        <p class="text-xl font-semibold">Brooklyn, NY 11218</p>
+        <h2 class="text-3xl font-semibold py-4">Ateres Charna</h2>
+        <p class="text-xl font-semibold">790 N Main St</p>
+        <p class="text-xl font-semibold">Spring Valley, NY 10977</p>
         <div class="mt-3">
         <a href="https://www.google.com/maps/place/The+Legacy/@40.6424704,-73.9866998,17z/data=!4m15!1m8!3m7!1s0x89c25ad66db6c22d:0xff78629101182a77!2s1275+36th+St,+Brooklyn,+NY+11218!3b1!8m2!3d40.6424704!4d-73.9845111!16s%2Fg%2F11f1sl4jfl!3m5!1s0x89c25ad66cb020c7:0x1738584c7f0df894!8m2!3d40.6424704!4d-73.9845111!16s%2Fg%2F11dfwz7yhm"
             target="_blank" class="items-center justify-center px-4 py-2 underline text-[#4B5563] border border-black text-base font-medium rounded-md bg-black-400 hover:bg-red-300 md:shadow-md md:rounded-lg">View on Google Maps</a>
@@ -163,7 +163,7 @@
         <div class="schedule text-center w-full sm:w-2/3 md:w-1/2 mx-auto my-4">
             <p class="text-xl font-semibold">Reception at 6:30 PM</p>
             <p class="text-xl font-semibold">Chupa at 7:30 PM</p>
-            <p class="text-xl font-semibold">Simchas Choson V'Kallah at 9:30 PM</p>
+            <p class="text-xl font-semibold">Simchas Choson V'Kallah at 10:30 PM</p>
         </div>
 
     </section>
